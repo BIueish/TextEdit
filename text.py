@@ -10,7 +10,7 @@ except ImportError:
 
 
 class TextEdit:
-    def __init__(self, x=0, y=0, width=600, height=600, color=(255, 255, 255), show=True, focus=True, text=None, font="", size=13, spacing=3, fontcolor=(0, 0, 0), blink=20, syntaxhighlight=True):
+    def __init__(self, x=0, y=0, width=600, height=600, color=(0, 0, 0), show=True, focus=True, text=None, font="", size=13, spacing=3, fontcolor=(0, 0, 0), cursorcolor=(0, 0, 0), blink=20, syntaxhighlight=True):
         if text is None:
             text = [""]
         self.x = x
@@ -22,6 +22,7 @@ class TextEdit:
         self.focus = focus
         self.text = text
         self.size = size
+        self.cursorColor = cursorcolor
         try:
             self.font = pygame.font.Font(font, size)
         except:
@@ -167,7 +168,7 @@ class TextEdit:
                 if i == self.cursorPos[0]:
                     if self.cursorBlink <= 0:
                         surf = self.font.render(' '*self.cursorPos[1], False, (255, 255, 255))
-                        pygame.draw.rect(pygame.display.get_surface(), (255, 255, 255), (self.x+self.spacing+surf.get_width(), y, 2, surf.get_height()))
+                        pygame.draw.rect(pygame.display.get_surface(), self.cursorColor, (self.x+self.spacing+surf.get_width(), y, 2, surf.get_height()))
                 y += self.size + self.spacing
 
             y = self.y + self.spacing
