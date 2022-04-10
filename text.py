@@ -10,7 +10,7 @@ except ImportError:
 
 
 class TextEdit:
-    def __init__(self, x=0, y=0, width=600, height=600, color=(0, 0, 0), show=True, focus=True, text=None, font="", size=13, spacing=3, fontcolor=(0, 0, 0), blink=20, syntaxhighlight=True):
+    def __init__(self, x=0, y=0, width=600, height=600, color=(255, 255, 255), show=True, focus=True, text=None, font="", size=13, spacing=3, fontcolor=(0, 0, 0), blink=20, syntaxhighlight=True):
         if text is None:
             text = [""]
         self.x = x
@@ -25,7 +25,7 @@ class TextEdit:
         try:
             self.font = pygame.font.Font(font, size)
         except:
-            self.font = pygame.font.SysFont("Arial", size)
+            self.font = pygame.font.SysFont("Courier New", size)
         char = self.font.render(" ", False, (0, 0, 0))
         self.fontwidth = char.get_width()
         self.spacing = spacing
