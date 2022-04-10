@@ -31,6 +31,8 @@ while True:
 
 ```
 
+The default font is not the most beautiful and I recommend to use good monospace fonts like JetBrainsMono
+
 ## Features
 
 The TextEdit class has the following features:
