@@ -26,10 +26,10 @@ while True:
 ```
 
 The TextEdit class has the following features:
-  Basic typing
-  Syntax highlighting
-  Selection
-  Copy and paste
-  etc.
+  - Basic typing
+  - Syntax highlighting
+  - Selection
+  - Copy and paste
+  - etc.
   
 Read the wiki for more information.
