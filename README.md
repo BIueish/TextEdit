@@ -1,6 +1,12 @@
 # TextEdit
 Pygame extension providing text input functionalities
 
+Dependencies: pygame
+
+Optional dependencies: pyperclip(Needed for Copy/Paste)
+
+## Usage
+
 To use just import text.py and create a TextEdit class.
 Render and update this TextEdit class in your program loop.
 
@@ -24,6 +30,8 @@ while True:
   pygame.display.update()
 
 ```
+
+## Features
 
 The TextEdit class has the following features:
   - Basic typing
