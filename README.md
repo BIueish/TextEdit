@@ -1,5 +1,5 @@
 # TextEdit
-Pygame extension providing text input functionalities
+Pygame extension providing text input and editing functionalities
 
 Dependencies: pygame
 
