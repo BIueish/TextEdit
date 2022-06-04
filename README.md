@@ -31,7 +31,7 @@ while True:
 
 ```
 
-The default font is not the most beautiful and I recommend to use good monospace fonts like JetBrainsMono
+The default font is not beautiful and I recommend to use better looking monospace fonts.
 
 ## Features
 
